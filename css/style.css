@@ -1,44 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-.wrapper
-{
+.wrapper {
+    display: grid;
     background-color: #eee;
     margin: 0 auto;
     padding: 40px;
     width: 1200px;
+    font-family: "Open Sans";
 }
 
-img 
-{
+img {
     border-radius: 20px;
     max-width: 100%;
     max-height: 100%;
 }
 
-.top-nav
-{
-    display: grid;
-    grid-template-columns: 80% repeat(3, 1fr);
-    grid-template-rows: 1fr;
+.temp {
+    display: flex;
+    justify-content: space-around;
 }
 
-.nav-link
-{
+.no_line {
+    text-decoration: none;
+    list-style: none;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.nav-link {
     text-decoration-line: none;
+    font-size: 16px;
     color: black;
 }
 
-.img-big
-{
+.img-big {
     background-image: url(../img/happiest-dog.webp);
     height: 600px;
-    color: white;
+    color: white; 
+    border-radius: 20px;
 }
 
-.bottom-half
-{
-    /* grid-template-rows: repeat(3, 1fr); */
-    /* grid-template-columns: 1fr; */
-    grid-template-areas: 
-                    "g g g p"
-                    "m b f p";
+/* .bottom-half {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+} */
+
+/* .oct-grooming {
+    
+} */
+
+.wide-card {
+    background-color: gray;
+    border-radius: 20px;
+}
+
+.small-card {
+    background-color: gray;
+    border-radius: 20px;
+}
+
+/* .tall-card {
+    
+} */
+
+.sponsors {
+    width: 100px;
+    height: 100px;
 }
